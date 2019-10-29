@@ -5,21 +5,18 @@ import java.util.Date;
 
 public class Event {
 
-	private int idEvent;
 	private String Name;
 	private String Tipology;
 	private float Price;
 	private String Resources;
 	private Date DateEvent;
+	//private Spaces space;
 	
 	private ArrayList<Spaces> listaEspacios;
-
-	public int getIdEvent() {
-		return idEvent;
-	}
-
-	public void setIdEvent(int idEvent) {
-		this.idEvent = idEvent;
+	
+	public Event()
+	{
+		//constructor
 	}
 
 	public String getName() {
