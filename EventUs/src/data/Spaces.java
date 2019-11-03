@@ -12,6 +12,15 @@ public class Spaces
 	private String resources;
 	
 //	private ArrayList<Event> listaEventos;
+	
+	public Spaces(int idSpace, String name, String address, int capacity, String resources)
+	{
+		this.idSpace=idSpace;
+		this.name=name;
+		this.address=address;
+		this.capacity=capacity;
+		this.resources=resources;
+	}
 
 	public int getIdSpace() {
 		return idSpace;

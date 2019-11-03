@@ -25,7 +25,7 @@ public class Event {
 		this.Minutes = minutes;
 	}
 
-	public addSpace (Space space)
+	public void addSpace (Spaces space)
 	{
 		this.Space= space;
 	}
