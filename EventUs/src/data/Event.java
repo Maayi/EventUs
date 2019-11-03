@@ -7,18 +7,28 @@ public class Event {
 
 	private String Name;
 	private String Tipology;
-	private Spaces space;
+	private Spaces Space;
 	private float Price;
 	private String Resources;
 	private Date DateEvent;
-	private int hour;
-	private int minutes;
+	private int Hour;
+	private int Minutes;
 	
-	public Event()
+	public Event(String name, String tipology, float price, String resources, Date date, int hour, int minutes)
 	{
-		//constructor.
+		this.Name = name;
+		this.Tipology = tipology;
+		this.Price = price;
+		this.Resources = resources;
+		this.DateEvent = date;
+		this.Hour = hour;
+		this.Minutes = minutes;
 	}
 
+	public addSpace (Space space)
+	{
+		this.Space= space;
+	}
 	public String getName() {
 		return Name;
 	}
@@ -36,28 +46,28 @@ public class Event {
 	}
 	
 	public Spaces getSpace() {
-		return space;
+		return Space;
 	}
 
 	public void setSpace(Spaces space) {
-		this.space = space;
+		this.Space = space;
 	}
 
 	public int getHour() {
-		return hour;
+		return Hour;
 	}
 
 	public void setHour(int hour) {
-		this.hour = hour;
+		this.Hour = hour;
 	}
 	
 	public int getMinutes()
 	{
-		return minutes;
+		return Minutes;
 	}
 	
 	public void setMinutes(int minutes) {
-		this.minutes = minutes;
+		this.Minutes = minutes;
 	}
 
 	public String getResources() {
