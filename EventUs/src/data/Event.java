@@ -16,7 +16,7 @@ public class Event {
 	
 	public Event()
 	{
-		//constructor
+		//constructor.
 	}
 
 	public String getName() {
