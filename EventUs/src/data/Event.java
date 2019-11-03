@@ -7,12 +7,12 @@ public class Event {
 
 	private String Name;
 	private String Tipology;
+	private Spaces space;
 	private float Price;
 	private String Resources;
 	private Date DateEvent;
-	//private Spaces space;
-	
-	private ArrayList<Spaces> listaEspacios;
+	private int hour;
+	private int minutes;
 	
 	public Event()
 	{
@@ -24,7 +24,7 @@ public class Event {
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.Name = name;
 	}
 
 	public String getTipology() {
@@ -32,15 +32,32 @@ public class Event {
 	}
 
 	public void setTipology(String tipology) {
-		Tipology = tipology;
+		this.Tipology = tipology;
+	}
+	
+	public Spaces getSpace() {
+		return space;
 	}
 
-	public float getPrice() {
-		return Price;
+	public void setSpace(Spaces space) {
+		this.space = space;
 	}
 
-	public void setPrice(float price) {
-		Price = price;
+	public int getHour() {
+		return hour;
+	}
+
+	public void setHour(int hour) {
+		this.hour = hour;
+	}
+	
+	public int getMinutes()
+	{
+		return minutes;
+	}
+	
+	public void setMinutes(int minutes) {
+		this.minutes = minutes;
 	}
 
 	public String getResources() {
@@ -48,7 +65,7 @@ public class Event {
 	}
 
 	public void setResources(String resources) {
-		Resources = resources;
+		this.Resources = resources;
 	}
 
 	public Date getDateEvent() {
@@ -56,15 +73,15 @@ public class Event {
 	}
 
 	public void setDateEvent(Date dateEvent) {
-		DateEvent = dateEvent;
+		this.DateEvent = dateEvent;
+	}
+	
+	public float getPrice() {
+		return Price;
 	}
 
-	public ArrayList<Spaces> getListaEspacios() {
-		return listaEspacios;
-	}
-
-	public void setListaEspacios(ArrayList<Spaces> listaEspacios) {
-		this.listaEspacios = listaEspacios;
+	public void setPrice(float price) {
+		Price = price;
 	}
 	
 	

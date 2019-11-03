@@ -8,8 +8,10 @@ public class Spaces
 	private int idSpace;
 	private String name;
 	private String address;
+	private int capacity;
+	private String resources;
 	
-	private ArrayList<Event> listaEventos;
+//	private ArrayList<Event> listaEventos;
 
 	public int getIdSpace() {
 		return idSpace;
@@ -35,12 +37,20 @@ public class Spaces
 		this.address = address;
 	}
 
-	public ArrayList<Event> getListaEventos() {
-		return listaEventos;
+	public int getCapacity() {
+		return capacity;
 	}
 
-	public void setListaEventos(ArrayList<Event> listaEventos) {
-		this.listaEventos = listaEventos;
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+	
+	public String getResources() {
+		return resources;
+	}
+
+	public void setResources(String resources) {
+		this.resources = resources;
 	}
 	
 	
